@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MarketSelectView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2J-au-MQg">
+                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="37"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="进行中">
+                        <color key="titleColor" red="0.36075419187545776" green="0.36080124974250793" blue="0.36073815822601318" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="进行中">
+                        <color key="titleColor" red="0.86879199740000002" green="0.31304568049999998" blue="0.31124401089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="click:" destination="iN0-l3-epB" eventType="touchUpInside" id="c8P-h4-Eyf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wO1-To-ebS">
+                    <rect key="frame" x="106.5" y="0.0" width="107" height="37"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="已完成">
+                        <color key="titleColor" red="0.36078431372549019" green="0.36078431372549019" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="已完成">
+                        <color key="titleColor" red="0.86879199740000002" green="0.31304568049999998" blue="0.31124401089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="click:" destination="iN0-l3-epB" eventType="touchUpInside" id="8zd-tz-fWr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ch0-K7-gYt">
+                    <rect key="frame" x="213.5" y="0.0" width="106.5" height="37"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="我发布的">
+                        <color key="titleColor" red="0.36075419187545776" green="0.36080124974250793" blue="0.36073815822601318" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="我发布的">
+                        <color key="titleColor" red="0.86879199740000002" green="0.31304568049999998" blue="0.31124401089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="click:" destination="iN0-l3-epB" eventType="touchUpInside" id="bz6-zu-4ph"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rl6-qe-P7f">
+                    <rect key="frame" x="0.0" y="36" width="106.5" height="1"/>
+                    <color key="backgroundColor" red="0.87058823529411766" green="0.31372549019607843" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="1gH-Zn-mHk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rl6-qe-P7f" firstAttribute="leading" secondItem="f2J-au-MQg" secondAttribute="leading" id="1yg-l5-TUe"/>
+                <constraint firstItem="wO1-To-ebS" firstAttribute="width" secondItem="f2J-au-MQg" secondAttribute="width" id="27m-3U-8v5"/>
+                <constraint firstAttribute="bottom" secondItem="wO1-To-ebS" secondAttribute="bottom" id="4W6-Um-weQ"/>
+                <constraint firstItem="f2J-au-MQg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GJB-gv-uBe"/>
+                <constraint firstItem="Ch0-K7-gYt" firstAttribute="leading" secondItem="wO1-To-ebS" secondAttribute="trailing" id="I8M-KA-PI4"/>
+                <constraint firstAttribute="bottom" secondItem="rl6-qe-P7f" secondAttribute="bottom" id="Ncv-q1-dg6"/>
+                <constraint firstItem="wO1-To-ebS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XqM-Ds-FfT"/>
+                <constraint firstAttribute="trailing" secondItem="Ch0-K7-gYt" secondAttribute="trailing" id="XzZ-0W-UAe"/>
+                <constraint firstItem="rl6-qe-P7f" firstAttribute="centerX" secondItem="f2J-au-MQg" secondAttribute="centerX" id="ajM-mK-ckf"/>
+                <constraint firstAttribute="bottom" secondItem="Ch0-K7-gYt" secondAttribute="bottom" id="boE-w8-NlR"/>
+                <constraint firstItem="Ch0-K7-gYt" firstAttribute="width" secondItem="f2J-au-MQg" secondAttribute="width" id="hRd-f6-tBr"/>
+                <constraint firstItem="f2J-au-MQg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jQU-7E-To4"/>
+                <constraint firstItem="wO1-To-ebS" firstAttribute="leading" secondItem="f2J-au-MQg" secondAttribute="trailing" id="kdY-ko-1Sa"/>
+                <constraint firstAttribute="bottom" secondItem="f2J-au-MQg" secondAttribute="bottom" id="nqa-uY-4XG"/>
+                <constraint firstItem="Ch0-K7-gYt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qJm-eM-vGR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="finishButton" destination="wO1-To-ebS" id="G34-ME-ANX"/>
+                <outlet property="iReleasedButton" destination="Ch0-K7-gYt" id="Kbg-6g-j3B"/>
+                <outlet property="inProgressButton" destination="f2J-au-MQg" id="NGY-oI-jbS"/>
+                <outlet property="slideView" destination="rl6-qe-P7f" id="Yhg-IA-KjW"/>
+            </connections>
+            <point key="canvasLocation" x="75" y="14.5"/>
+        </view>
+    </objects>
+</document>

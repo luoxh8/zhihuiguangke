@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
+            <connections>
+                <outlet property="SearchBar" destination="WFa-3d-Bb8" id="Zgl-iI-eRW"/>
+                <outlet property="TableView" destination="5Xo-iI-uUe" id="Zt0-dJ-Kvs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="WFa-3d-Bb8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="eja-J4-kVY"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="i5M-Pr-FkT" id="xy6-NM-NpY"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Xo-iI-uUe">
+                    <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WFa-3d-Bb8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="18u-ik-VsL"/>
+                <constraint firstItem="5Xo-iI-uUe" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="518-et-JND"/>
+                <constraint firstItem="5Xo-iI-uUe" firstAttribute="top" secondItem="WFa-3d-Bb8" secondAttribute="bottom" id="AU1-cu-nE4"/>
+                <constraint firstItem="5Xo-iI-uUe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D8A-xB-rb7"/>
+                <constraint firstItem="5Xo-iI-uUe" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Hvv-z8-35Z"/>
+                <constraint firstItem="WFa-3d-Bb8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kWO-RS-GCT"/>
+                <constraint firstItem="WFa-3d-Bb8" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="oby-zS-8Bm"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+            <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="108.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
