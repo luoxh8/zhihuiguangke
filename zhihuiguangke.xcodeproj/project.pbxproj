@@ -70,7 +70,7 @@
 		0CFC41E91FD1843D00E78B02 /* SchoolCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CFC41E71FD1843D00E78B02 /* SchoolCollectionReusableView.xib */; };
 		4A9468AD2182EAB4003658EA /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9468AB2182EAB4003658EA /* SearchViewController.m */; };
 		4A9468AE2182EAB4003658EA /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A9468AC2182EAB4003658EA /* SearchViewController.xib */; };
-		943BABB4818D270C599D73A6 /* libPods-zhihuiguangke in Frameworks */ = {isa = PBXBuildFile; fileRef = 5588229CD5C649A1AE42BA7A /* libPods-zhihuiguangke.a */; };
+		943BABB4818D270C599D73A6 /* libPods-zhihuiguangke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5588229CD5C649A1AE42BA7A /* libPods-zhihuiguangke.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -658,7 +658,6 @@
 				ORGANIZATIONNAME = "罗兴惠";
 				TargetAttributes = {
 					0C5F666D1F8C8E8E00ABE39C = {
-						zhihuiguangkedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -668,6 +667,7 @@
 								enabled = 1;
 							};
 						};
+						zhihuiguangkedOnToolsVersion = 9.0;
 					};
 				};
 			};
@@ -935,7 +935,7 @@
 				CODE_SIGN_ENTITLEMENTS = zhihuiguangke/zhihuiguangke.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6E9MKPH6M2;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = zhihuiguangke/Define.h;
 				INFOPLIST_FILE = zhihuiguangke/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -955,7 +955,7 @@
 				CODE_SIGN_ENTITLEMENTS = zhihuiguangke/zhihuiguangke.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6E9MKPH6M2;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = zhihuiguangke/Define.h;
 				INFOPLIST_FILE = zhihuiguangke/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

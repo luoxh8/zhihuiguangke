@@ -6,12 +6,12 @@ target 'zhihuiguangke' do
   # use_frameworks!
 
   # Pods for Create
-	pod ‘YYCategories’
-    pod 'DKNetworking'
-    pod 'SDCycleScrollView'
-    pod 'MJRefresh'
-    pod 'SDWebImage'
-    pod 'SDAutoLayout'
-    pod 'JPush'
-    pod 'MBProgressHUD'
+  pod ‘YYCategories’
+  pod 'DKNetworking'
+  pod 'SDCycleScrollView'
+  pod 'MJRefresh'
+  pod 'SDWebImage'
+  pod 'SDAutoLayout'
+  pod 'JPush'
+  pod 'MBProgressHUD'
 end

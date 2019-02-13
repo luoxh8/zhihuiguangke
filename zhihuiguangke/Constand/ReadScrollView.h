@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ReadScrollView : UIScrollView
-- (instancetype)initWithFrame:(CGRect)frame withChildView:(NSArray<UIView*>*)childView withContentSize:(CGSize)contentSize withIsPagingEnabled:(BOOL)isPagingEnabled;
+- (instancetype)initWithFrame:(CGRect)frame
+                withChildView:(NSArray<UIView *> *)childView
+              withContentSize:(CGSize)contentSize
+          withIsPagingEnabled:(BOOL)isPagingEnabled;
 @end

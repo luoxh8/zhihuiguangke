@@ -117,7 +117,7 @@
 #define BottomSpacing 40.0f
 #define LeftSpacing 20.0f
 #define RightSpacing  20.0f
-#define DELAYEXECUTE(delayTime,func) (dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{func;}))
+#define DELAYEXECUTE(delayTime, func) (dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{func;}))
 #define DistanceFromTopGuiden(view) (view.frame.origin.y + view.frame.size.height)
 #define DistanceFromLeftGuiden(view) (view.frame.origin.x + view.frame.size.width)
 #define ViewOrigin(view)   (view.frame.origin)
@@ -143,7 +143,7 @@
 #define MinFontSize 11.0f
 #define MaxFontSize 40.0f
 
-#define mainBlueColor UIColorHex(5DB4FE) 
+#define mainBlueColor UIColorHex(5DB4FE)
 #define darkModelColor UIColorHex(121212)
 #define brightnessModelColor [UIColor whiteColor]
 

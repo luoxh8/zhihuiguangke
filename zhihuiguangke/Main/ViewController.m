@@ -6,8 +6,6 @@
 //  Copyright © 2017年 罗兴惠. All rights reserved.
 //
 
-#import "ViewController.h"
-
 @interface ViewController ()
 
 @end
@@ -16,8 +14,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc]init];
+
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     [backItem setTitle:@""];
     self.navigationItem.backBarButtonItem = backItem;
     self.view.backgroundColor = [UIColor whiteColor];
