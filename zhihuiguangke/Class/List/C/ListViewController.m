@@ -18,10 +18,6 @@
 
 @implementation ListViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-
 - (instancetype)initWithTypeID:(NSString *)ID withTitle:(NSString *)title {
     if (self = [super init]) {
         _ID = ID;

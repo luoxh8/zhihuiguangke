@@ -23,3 +23,10 @@ git clone https://github.com/ReadRou/zhihuiguangke.git
 pod install
 ```
 
+# 效果展示
+
+![](./imgas/1.png)
+
+![](./imgas/2.png)
+
+![](./imgas/3.png)

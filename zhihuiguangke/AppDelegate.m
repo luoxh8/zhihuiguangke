@@ -30,8 +30,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    //Required
-    //notice: 3.0.0及以后版本注册可以这样写，也可以继续用之前的注册方式
+    // Required
+    // notice: 3.0.0及以后版本注册可以这样写，也可以继续用之前的注册方式
     JPUSHRegisterEntity *entity = [[JPUSHRegisterEntity alloc] init];
     entity.types = JPAuthorizationOptionAlert | JPAuthorizationOptionBadge | JPAuthorizationOptionSound;
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
@@ -50,7 +50,7 @@
                  apsForProduction:1
             advertisingIdentifier:nil];
 
-    //创建对象
+    // 创建
     TabBarController *tabbar = [[TabBarController alloc] init];
     NavigationController *n1 = [[NavigationController alloc] initWithRootViewController:[HomeViewController new]];
     n1.title = @"首页";
@@ -60,9 +60,9 @@
     n3.title = @"同学";
     NavigationController *n4 = [[NavigationController alloc] initWithRootViewController:[MeViewController new]];
     n4.title = @"我";
-    tabbar.viewControllers = @[n1, n2, n3, n4];
+    tabbar.viewControllers = @[n1, n2, n3];
 
-    //设置属性
+    // 设置属性
     self.window = [[UIWindow alloc] initWithFrame:kScreenBounds];
     self.window.rootViewController = tabbar;
     [self.window makeKeyAndVisible];

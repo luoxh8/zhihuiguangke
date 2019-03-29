@@ -14,7 +14,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     [backItem setTitle:@""];
     self.navigationItem.backBarButtonItem = backItem;
