@@ -7,6 +7,7 @@
 **注：该项目并不完整，只用于提现本人的IOS程序编写的能力的一个DEMO。**
 
 # 项目依赖
+``` shell
 YYCategories
 DKNetworking
 SDCycleScrollView
@@ -15,8 +16,9 @@ SDWebImage
 SDAutoLayout	
 JPush
 MBProgressHUD
+```
 
-依赖安装：
+# 下载&启动
 
 ``` shell
 git clone https://github.com/ReadRou/zhihuiguangke.git
